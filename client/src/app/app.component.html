@@ -1,0 +1,55 @@
+<div style="text-align:center">
+  <h1>
+    WebSocket app example NodeJs + Angular
+  </h1>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h3>Memory</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 chart">
+    <ngx-charts-line-chart
+      [scheme]="memColorScheme"
+      [results]="memData"
+      [gradient]="commonChart.enableGradient"
+      [xAxis]="commonChart.showXAxis"
+      [yAxis]="commonChart.showYAxis"
+      [legend]="commonChart.showLegend"
+      [showXAxisLabel]="commonChart.showXAxisLabel"
+      [showYAxisLabel]="commonChart.showYAxisLabel"
+      [xAxisLabel]="'Time'"
+      [yAxisLabel]="'Kb'"
+      [curve]="commonChart.curve"
+      [animations]="commonChart.animations"
+      [autoScale]="commonChart.autoScale">
+    </ngx-charts-line-chart>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h3>CPUs</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 chart">
+    <ngx-charts-line-chart
+      [scheme]="cpuColorScheme"
+      [results]="cpuData"
+      [gradient]="commonChart.enableGradient"
+      [xAxis]="commonChart.showXAxis"
+      [yAxis]="commonChart.showYAxis"
+      [legend]="commonChart.showLegend"
+      [showXAxisLabel]="commonChart.showXAxisLabel"
+      [showYAxisLabel]="commonChart.showYAxisLabel"
+      [xAxisLabel]="'Time'"
+      [yAxisLabel]="'%'"
+      [curve]="commonChart.curve"
+      [animations]="commonChart.animations"
+      [yScaleMin]="0"
+      [yScaleMax]="100"
+      [autoScale]="commonChart.autoScale">
+    </ngx-charts-line-chart>
+  </div>
+</div>

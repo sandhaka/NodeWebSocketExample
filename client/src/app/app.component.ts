@@ -1,5 +1,4 @@
 import {ChangeDetectionStrategy, ChangeDetectorRef, Component, OnDestroy, OnInit} from '@angular/core';
-import { Chart } from 'chart.js';
 import {SysService} from "./sys.service";
 import {Message} from "common/lib";
 import * as shape from 'd3-shape';

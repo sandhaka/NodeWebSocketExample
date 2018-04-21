@@ -7,6 +7,7 @@ import {NgxChartsModule} from '@swimlane/ngx-charts';
 import {SysService} from "./sys.service";
 import {WebSocketService} from "./websocket.service";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {AppDataService} from "./app.data.service";
 
 
 @NgModule({
@@ -19,7 +20,11 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     BrowserAnimationsModule,
     NgxChartsModule,
   ],
-  providers: [SysService, WebSocketService],
+  providers: [
+    SysService,
+    WebSocketService,
+    AppDataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
